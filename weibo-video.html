@@ -1,0 +1,696 @@
+<!doctype html>
+<html class="no-js">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>weibo</title>
+
+		<!-- Set render engine for 360 browser -->
+		<meta name="renderer" content="webkit">
+
+		<!-- No Baidu Siteapp-->
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+		<link rel="icon" type="image/png" href="i/favicon.png">
+
+		<!-- Add to homescreen for Chrome on Android -->
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="icon" sizes="192x192" href="i/app-icon72x72@2x.png">
+
+		<!-- Add to homescreen for Safari on iOS -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Amaze UI" />
+		<link rel="apple-touch-icon-precomposed" href="i/app-icon72x72@2x.png">
+
+		<!-- Tile icon for Win8 (144x144 + tile color) -->
+		<meta name="msapplication-TileImage" content="i/app-icon72x72@2x.png">
+		<meta name="msapplication-TileColor" content="#0e90d2">
+
+		<link rel="stylesheet" href="css/amazeui.min.css">
+		<link rel="stylesheet" href="css/app.css">
+		<link rel="stylesheet" href="css/animate.css" />
+		<script src="js/handlebars.min.js"></script>
+		<link rel="canonical" href="http://amazeui.org/widgets/duoshuo/default/0?_ver=2.x">
+		<!--<script type="text/javascript" async="" src="./多说 - default（默认） _ Amaze UI_files/embed.js" charset="UTF-8"></script>
+		<link type="text/css" rel="stylesheet" href="./多说 - default（默认） _ Amaze UI_files/embed.default.css">-->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+
+	<body style="background: #fff;">
+		<!---导航--->
+		<header class="am-topbar am-topbar-fixed-top">
+			<h1 class="am-topbar-brand">
+    		<a href="#"><img src="img/WB_logo.png" /></a>
+  		</h1>
+			<button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" style="background: #FA7D3C;border: 0px;" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars" style="color: #fff;"></span></button>
+			<div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+				<ul class="am-nav am-nav-pills am-topbar-nav">
+					<li class="">
+						<form class="am-topbar-form am-topbar-left am-form-inline am-hide-md-down" role="search">
+							<div class="am-form-group">
+								<div class="am-form-icon am-form-feedback seacrh-btn">
+									<input type="text" name="q" class="am-form-field" id="search-keyword" value="大家都在搜:周琦" />
+									<a class="am-icon-search" type="submit"></a>
+								</div>
+
+							</div>
+						</form>
+					</li>
+				</ul>
+
+				<div class="am-topbar-right">
+					<a href="#"><button class="am-btn am-btn-default am-topbar-btn am-btn-sm login">登录</button></a>
+				</div>
+				<div class="am-topbar-right">
+					<a href="#"><button class="am-btn am-btn-default am-topbar-btn am-btn-sm">注册</button></a>
+				</div>
+				<div class="am-topbar-right">
+					<a href="#"><button class="am-btn am-btn-default am-topbar-btn am-btn-sm">
+						<i class="am-icon-life-saver am-icon-spinner am-icon-spin am-icon-fw"></i>
+						游戏
+					</button>
+					</a>
+				</div>
+				<div class="am-topbar-right">
+					<a href="#"><button class="am-btn am-btn-default am-topbar-btn am-btn-sm">
+						<i class="am-icon-camera am-icon-refresh am-icon-spin am-icon-fw"></i>
+						发现
+					</button>
+					</a>
+				</div>
+				<div class="am-topbar-right">
+					<a href="#"><button class="am-btn am-btn-default am-topbar-btn am-btn-sm">
+						<i class="am-icon-film am-icon-circle-o-notch am-icon-spin am-icon-fw"></i>
+						视频
+					</button>
+					</a>
+				</div>
+				<div class="am-topbar-right">
+					<a href="../weibo/weibo.html"><button class="am-btn am-btn-default am-topbar-btn am-btn-sm">
+						<i class="am-icon-home am-icon-cog am-icon-spin am-icon-fw"></i>
+						首页
+					</button>
+					</a>
+				</div>
+			</div>
+		</header>
+		<div class="search-box">
+			<div style="color: #Fa7d3c;font-size: 12px;">查看完整热搜版&raquo;</div>
+			<div class="search-nav">
+				<div class="num-bg" style="background: #f00;">1</div>
+				<p class="search-text">女生今天骂人，明朝怎么嫁人</p>
+			</div>
+			<div class="search-nav">
+				<div class="num-bg" style="background: #FFAD6D;">2</div>
+				<p class="search-text">夏梦去世</p>
+			</div>
+			<div class="search-nav">
+				<div class="num-bg" style="background: #888;">3</div>
+				<p class="search-text">葛天前男友力挺葛天</p>
+			</div>
+			<div class="search-nav">
+				<div class="num-bg" style="background: #888;">4</div>
+				<p class="search-text">天线宝宝刘诗诗</p>
+			</div>
+			<div class="search-nav">
+				<div class="num-bg" style="background: #888;">5</div>
+				<p class="search-text">坐1小时走2分钟</p>
+			</div>
+			<div class="search-nav">
+				<div class="num-bg" style="background: #888;">6</div>
+				<p class="search-text">穿梭千年来相爱2</p>
+			</div>
+			<div class="search-nav">
+				<div class="num-bg" style="background: #888;">7</div>
+				<p class="search-text">易建联道歉</p>
+			</div>
+			<div class="search-nav">
+				<div class="num-bg" style="background: #888;">8</div>
+				<p class="search-text">睡相不太好的女生</p>
+			</div>
+			<div class="search-nav">
+				<div class="num-bg" style="background: #888;">9</div>
+				<p class="search-text">英语教材曝光</p>
+			</div>
+			<div class="search-nav">
+				<div class="num-bg" style="background: #888;">10</div>
+				<p class="search-text">台北故宫 北京故宫</p>
+			</div>
+		</div>
+		<!---内容--->
+		<div class="am-container tab_inner am-text-center am-hide-sm-only">
+			<ul class="tab_ul am-cf am-avg-sm-7">
+				<li class="tab_li am-fl">
+					<a href="#">视频首页</a>
+				</li>
+				<li class="tab_li am-fl">
+					<a href="#">搞笑</a>
+				</li>
+				<li class="tab_li am-fl">
+					<a href="#">美女直播</a>
+				</li>
+				<li class="tab_li am-fl">
+					<a href="#">音乐</a>
+				</li>
+				<li class="tab_li am-fl">
+					<a href="#">萌宠萌娃</a>
+				</li>
+				<li class="tab_li am-fl">
+					<a href="#">明星直播</a>
+				</li>
+				<li class="tab_li am-fl">
+					<a href="#">明星综艺</a>
+				</li>
+
+			</ul>
+
+		</div>
+		<hr />
+		<div class="am-container">
+			<div class="am-g">
+				<div class="am-u-lg-9 am-u-md-8 am-u-sm-12" >
+					<div  class="video-box" style="position: relative;">
+						<video class="video" width="100%" controls autoplay>
+							<source src="video/video.mp4" type="video/mp4"></source>
+							当前浏览器不支持 video直接播放，点击这里下载视频：
+							<a href="myvideo.webm">下载视频</a>
+						</video>
+						<div class="video-big" style="position: absolute;top: 50%;right: 0;margin-top: -54px;" class="am-hide-sm-only">
+							<img src="img/switch_icon.png" alt="" class="am-hide-sm-only"/>
+							<b class="arrow-right am-hide-sm-only">></b>
+						</div>
+					</div>
+					<div class="weibo" style="margin-bottom: 20px;">
+						<p style="font-size: 16px;">看著小阿咘一天一天的長大，真的好有成就感～<img src="img/mb_org.gif" alt="" /><img src="img/mb_org.gif" alt="" />媽咪要用DV拍下你每個不同的樣子，為你的成長做記錄～～<img src="img/tootha_org.gif" alt="" /><img src="img/tootha_org.gif" alt="" />
+							<i class="am-icon-video-camera" style="color: #FFAD6D;">&nbsp;秒拍视屏</i>
+						</p>
+						<hr />
+						<div class="am-cf am-center">
+							<img src="img/696631e3jw8ezyb5j65ggj20e70e874n.jpg" style="width: 8%;" class="am-circle am-fl" />
+							<div class="am-fl" style="margin-left: 10px;">
+								<p style="font-size: 14px;margin-bottom: 0px;">贾静雯&nbsp;<i class="am-icon-vimeo-square" style="color: #FFAD6D;"></i></p>
+								
+								<button class="am-btn guanzhu" style="font-size: 12px;padding: 0px 5px;">
+									<b style="font-size: 20px;color: #FFAD6D;">+</b>&nbsp;关注
+								</button>
+							</div>
+							<div class="am-fr" style="margin-top: 10px;">
+								<i class="am-icon-play">&nbsp;播放:</i>
+								<m>3414</m>万
+							</div>
+						</div>
+					</div>
+					<div class="page pg-demo">
+						<div id="demo-view" data-backend-compiled="">
+							<div data-am-widget="duoshuo" class="am-duoshuo am-duoshuo-default am-no-layout" data-ds-short-name="landa2016">
+								<div class="ds-thread ds-narrow" id="ds-thread">
+
+								</div>
+							</div>
+						</div>
+						<script type="text/javascript">
+							var duoshuoQuery = {
+								short_name: "amui"
+							};
+							! function() {
+								var e = document.createElement("script");
+								e.type = "text/javascript", e.async = !0, e.src = "http://static.duoshuo.com/embed.js", e.charset = "UTF-8", (document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]).appendChild(e)
+							}() 
+							
+						</script>
+					</div>
+				</div>
+				<div class="am-u-lg-3 am-u-md-4 am-hide-sm-only cebian-box" style="padding-left: 0;">
+					<p class="cebian">相关视屏</p>
+					<div class="am-cf cebian-video">
+						<div class="am-fl" style="width: 40%;">
+							<img src="img/5db0ec6bjw1f9g5ek5i47j20hs0a0mxo.jpg" class="am-img-responsive"/>
+						</div>
+						<div class="am-fl" style="width: 58%;margin-left: 2%;margin-top: -5px;">
+							<p class="ellipsis-2" style="font-size: 6px;margin: 0;">爸爸去哪儿董力阿拉蕾一言不合就撩爸！“我想当董爸爸女朋友”这对CP我站了！</p>
+							<div class="" style="height: 20px;">
+								<img src="img/00668RPojw8etna7r1r64j30da0dbdi5.jpg" style="width: 10%;vertical-align:middle;"/>
+								<p style="display: inline-block;width: 20%;font-size: 6px;margin: 0;vertical-align: middle;" class="am-text-truncate">全球奇异事件</p>
+								<i class="am-icon-vimeo-square" style="color: #FFAD6D;font-size: 12px;"></i>
+								<p style="display: inline-block;font-size: 6px;color: #999;margin: 0;vertical-align: middle;" class="am-text-truncate">649</p>
+								<p style="display: inline-block;font-size: 6px;color: #999;margin: 0;vertical-align: middle;" class="am-text-truncate">万</p>
+							</div>
+						</div>
+						<i class="am-icon-play-circle-o"></i>
+					</div>
+					<div class="am-cf cebian-video">
+						<div class="am-fl" style="width: 40%;">
+							<img src="img/-fW7zf10rILP2VOWA633aw___m.jpg" class="am-img-responsive"/>
+						</div>
+						<div class="am-fl" style="width: 58%;margin-left: 2%;margin-top: -5px;">
+							<p class="ellipsis-2" style="font-size: 6px;margin: 0;">【申嘉湖高速今晨发生两起追尾事故，已致9死43伤】L秒拍视频 11月6日凌晨5时45分许</p>
+							<div class="" style="height: 20px;">
+								<img src="img/005vnhZYgw1ehsl3xhv75j308c08cq32.jpg" style="width: 10%;vertical-align:middle;"/>
+								<p style="display: inline-block;width: 20%;font-size: 6px;margin: 0;vertical-align: middle;" class="am-text-truncate">全球奇异事件</p>
+								<i class="am-icon-vimeo-square" style="color: #FFAD6D;font-size: 12px;"></i>
+								<p style="display: inline-block;font-size: 6px;color: #999;margin: 0;vertical-align: middle;" class="am-text-truncate">649</p>
+								<p style="display: inline-block;font-size: 6px;color: #999;margin: 0;vertical-align: middle;" class="am-text-truncate">万</p>
+							</div>
+						</div>
+						<i class="am-icon-play-circle-o"></i>
+					</div>
+					<div class="am-cf cebian-video">
+						<div class="am-fl" style="width: 40%;">
+							<img src="img/736f0c7ejw1f7titpzopjj20hs09wgmw.jpg" class="am-img-responsive"/>
+						</div>
+						<div class="am-fl" style="width: 58%;margin-left: 2%;margin-top: -5px;">
+							<p class="ellipsis-2" style="font-size: 6px;margin: 0;">《真正男子汉》里面最搞笑的一段，再也不会吃饭的时候看了</p>
+							<div class="" style="height: 20px;">
+								<img src="img/005CYdlIjw8ex6rq2r4t7j305k05kt8k.jpg" style="width: 10%;vertical-align:middle;"/>
+								<p style="display: inline-block;width: 20%;font-size: 6px;margin: 0;vertical-align: middle;" class="am-text-truncate">全球奇异事件</p>
+								<i class="am-icon-vimeo-square" style="color: #FFAD6D;font-size: 12px;"></i>
+								<p style="display: inline-block;font-size: 6px;color: #999;margin: 0;vertical-align: middle;" class="am-text-truncate">649</p>
+								<p style="display: inline-block;font-size: 6px;color: #999;margin: 0;vertical-align: middle;" class="am-text-truncate">万</p>
+							</div>
+						</div>
+						<i class="am-icon-play-circle-o"></i>
+					</div>
+					<div class="am-cf cebian-video">
+						<div class="am-fl" style="width: 40%;">
+							<img src="img/5db0ec6bjw1f9g5ek5i47j20hs0a0mxo.jpg" class="am-img-responsive"/>
+						</div>
+						<div class="am-fl" style="width: 58%;margin-left: 2%;margin-top: -5px;">
+							<p class="ellipsis-2" style="font-size: 6px;margin: 0;">爸爸去哪儿董力阿拉蕾一言不合就撩爸！“我想当董爸爸女朋友”这对CP我站了！</p>
+							<div class="" style="height: 20px;">
+								<img src="img/00668RPojw8etna7r1r64j30da0dbdi5.jpg" style="width: 10%;vertical-align:middle;"/>
+								<p style="display: inline-block;width: 20%;font-size: 6px;margin: 0;vertical-align: middle;" class="am-text-truncate">全球奇异事件</p>
+								<i class="am-icon-vimeo-square" style="color: #FFAD6D;font-size: 12px;"></i>
+								<p style="display: inline-block;font-size: 6px;color: #999;margin: 0;vertical-align: middle;" class="am-text-truncate">649</p>
+								<p style="display: inline-block;font-size: 6px;color: #999;margin: 0;vertical-align: middle;" class="am-text-truncate">万</p>
+							</div>
+						</div>
+						<i class="am-icon-play-circle-o"></i>
+					</div>
+					<div class="am-cf cebian-video">
+						<div class="am-fl" style="width: 40%;">
+							<img src="img/-fW7zf10rILP2VOWA633aw___m.jpg" class="am-img-responsive"/>
+						</div>
+						<div class="am-fl" style="width: 58%;margin-left: 2%;margin-top: -5px;">
+							<p class="ellipsis-2" style="font-size: 6px;margin: 0;">【申嘉湖高速今晨发生两起追尾事故，已致9死43伤】L秒拍视频 11月6日凌晨5时45分许</p>
+							<div class="" style="height: 20px;">
+								<img src="img/005vnhZYgw1ehsl3xhv75j308c08cq32.jpg" style="width: 10%;vertical-align:middle;"/>
+								<p style="display: inline-block;width: 20%;font-size: 6px;margin: 0;vertical-align: middle;" class="am-text-truncate">全球奇异事件</p>
+								<i class="am-icon-vimeo-square" style="color: #FFAD6D;font-size: 12px;"></i>
+								<p style="display: inline-block;font-size: 6px;color: #999;margin: 0;vertical-align: middle;" class="am-text-truncate">649</p>
+								<p style="display: inline-block;font-size: 6px;color: #999;margin: 0;vertical-align: middle;" class="am-text-truncate">万</p>
+							</div>
+						</div>
+						<i class="am-icon-play-circle-o"></i>
+					</div>
+					<div class="am-cf cebian-video">
+						<div class="am-fl" style="width: 40%;">
+							<img src="img/-fW7zf10rILP2VOWA633aw___m.jpg" class="am-img-responsive"/>
+						</div>
+						<div class="am-fl" style="width: 58%;margin-left: 2%;margin-top: -5px;">
+							<p class="ellipsis-2" style="font-size: 6px;margin: 0;">【申嘉湖高速今晨发生两起追尾事故，已致9死43伤】L秒拍视频 11月6日凌晨5时45分许</p>
+							<div class="" style="height: 20px;">
+								<img src="img/005vnhZYgw1ehsl3xhv75j308c08cq32.jpg" style="width: 10%;vertical-align:middle;"/>
+								<p style="display: inline-block;width: 20%;font-size: 6px;margin: 0;vertical-align: middle;" class="am-text-truncate">全球奇异事件</p>
+								<i class="am-icon-vimeo-square" style="color: #FFAD6D;font-size: 12px;"></i>
+								<p style="display: inline-block;font-size: 6px;color: #999;margin: 0;vertical-align: middle;" class="am-text-truncate">649</p>
+								<p style="display: inline-block;font-size: 6px;color: #999;margin: 0;vertical-align: middle;" class="am-text-truncate">万</p>
+							</div>
+						</div>
+						<i class="am-icon-play-circle-o"></i>
+					</div>
+					<div class="am-cf cebian-video">
+						<div class="am-fl" style="width: 40%;">
+							<img src="img/5db0ec6bjw1f9g5ek5i47j20hs0a0mxo.jpg" class="am-img-responsive"/>
+						</div>
+						<div class="am-fl" style="width: 58%;margin-left: 2%;margin-top: -5px;">
+							<p class="ellipsis-2" style="font-size: 6px;margin: 0;">爸爸去哪儿董力阿拉蕾一言不合就撩爸！“我想当董爸爸女朋友”这对CP我站了！</p>
+							<div class="" style="height: 20px;">
+								<img src="img/00668RPojw8etna7r1r64j30da0dbdi5.jpg" style="width: 10%;vertical-align:middle;"/>
+								<p style="display: inline-block;width: 20%;font-size: 6px;margin: 0;vertical-align: middle;" class="am-text-truncate">全球奇异事件</p>
+								<i class="am-icon-vimeo-square" style="color: #FFAD6D;font-size: 12px;"></i>
+								<p style="display: inline-block;font-size: 6px;color: #999;margin: 0;vertical-align: middle;" class="am-text-truncate">649</p>
+								<p style="display: inline-block;font-size: 6px;color: #999;margin: 0;vertical-align: middle;" class="am-text-truncate">万</p>
+							</div>
+						</div>
+						<i class="am-icon-play-circle-o"></i>
+					</div>
+					<div class="am-cf cebian-video">
+						<div class="am-fl" style="width: 40%;">
+							<img src="img/-fW7zf10rILP2VOWA633aw___m.jpg" class="am-img-responsive"/>
+						</div>
+						<div class="am-fl" style="width: 58%;margin-left: 2%;margin-top: -5px;">
+							<p class="ellipsis-2" style="font-size: 6px;margin: 0;">【申嘉湖高速今晨发生两起追尾事故，已致9死43伤】L秒拍视频 11月6日凌晨5时45分许</p>
+							<div class="" style="height: 20px;">
+								<img src="img/005vnhZYgw1ehsl3xhv75j308c08cq32.jpg" style="width: 10%;vertical-align:middle;"/>
+								<p style="display: inline-block;width: 20%;font-size: 6px;margin: 0;vertical-align: middle;" class="am-text-truncate">全球奇异事件</p>
+								<i class="am-icon-vimeo-square" style="color: #FFAD6D;font-size: 12px;"></i>
+								<p style="display: inline-block;font-size: 6px;color: #999;margin: 0;vertical-align: middle;" class="am-text-truncate">649</p>
+								<p style="display: inline-block;font-size: 6px;color: #999;margin: 0;vertical-align: middle;" class="am-text-truncate">万</p>
+							</div>
+						</div>
+						<i class="am-icon-play-circle-o"></i>
+					</div>
+					<div class="am-cf cebian-video">
+						<div class="am-fl" style="width: 40%;">
+							<img src="img/5db0ec6bjw1f9g5ek5i47j20hs0a0mxo.jpg" class="am-img-responsive"/>
+						</div>
+						<div class="am-fl" style="width: 58%;margin-left: 2%;margin-top: -5px;">
+							<p class="ellipsis-2" style="font-size: 6px;margin: 0;">爸爸去哪儿董力阿拉蕾一言不合就撩爸！“我想当董爸爸女朋友”这对CP我站了！</p>
+							<div class="" style="height: 20px;">
+								<img src="img/00668RPojw8etna7r1r64j30da0dbdi5.jpg" style="width: 10%;vertical-align:middle;"/>
+								<p style="display: inline-block;width: 20%;font-size: 6px;margin: 0;vertical-align: middle;" class="am-text-truncate">全球奇异事件</p>
+								<i class="am-icon-vimeo-square" style="color: #FFAD6D;font-size: 12px;"></i>
+								<p style="display: inline-block;font-size: 6px;color: #999;margin: 0;vertical-align: middle;" class="am-text-truncate">649</p>
+								<p style="display: inline-block;font-size: 6px;color: #999;margin: 0;vertical-align: middle;" class="am-text-truncate">万</p>
+							</div>
+						</div>
+						<i class="am-icon-play-circle-o"></i>
+					</div>
+					<!--<p class="cebian loadmorebtn" style="text-align: center;">加载更多</p>-->
+					<button id="np-fd" class="am-btn loadmorebtn" style="width: 100%;">加载更多</button>
+					<div class="loadmore" style="display: none;">
+						<div class="am-cf cebian-video">
+							<div class="am-fl" style="width: 40%;">
+								<img src="img/5db0ec6bjw1f9g5ek5i47j20hs0a0mxo.jpg" class="am-img-responsive"/>
+							</div>
+							<div class="am-fl" style="width: 58%;margin-left: 2%;margin-top: -5px;">
+								<p class="ellipsis-2" style="font-size: 6px;margin: 0;">爸爸去哪儿董力阿拉蕾一言不合就撩爸！“我想当董爸爸女朋友”这对CP我站了！</p>
+								<div class="" style="height: 20px;">
+									<img src="img/00668RPojw8etna7r1r64j30da0dbdi5.jpg" style="width: 10%;vertical-align:middle;"/>
+									<p style="display: inline-block;width: 20%;font-size: 6px;margin: 0;vertical-align: middle;" class="am-text-truncate">全球奇异事件</p>
+									<i class="am-icon-vimeo-square" style="color: #FFAD6D;font-size: 12px;"></i>
+									<p style="display: inline-block;font-size: 6px;color: #999;margin: 0;vertical-align: middle;" class="am-text-truncate">649</p>
+									<p style="display: inline-block;font-size: 6px;color: #999;margin: 0;vertical-align: middle;" class="am-text-truncate">万</p>
+								</div>
+							</div>
+							<i class="am-icon-play-circle-o"></i>
+						</div>
+						<div class="am-cf cebian-video">
+							<div class="am-fl" style="width: 40%;">
+								<img src="img/-fW7zf10rILP2VOWA633aw___m.jpg" class="am-img-responsive"/>
+							</div>
+							<div class="am-fl" style="width: 58%;margin-left: 2%;margin-top: -5px;">
+								<p class="ellipsis-2" style="font-size: 6px;margin: 0;">【申嘉湖高速今晨发生两起追尾事故，已致9死43伤】L秒拍视频 11月6日凌晨5时45分许</p>
+								<div class="" style="height: 20px;">
+									<img src="img/005vnhZYgw1ehsl3xhv75j308c08cq32.jpg" style="width: 10%;vertical-align:middle;"/>
+									<p style="display: inline-block;width: 20%;font-size: 6px;margin: 0;vertical-align: middle;" class="am-text-truncate">全球奇异事件</p>
+									<i class="am-icon-vimeo-square" style="color: #FFAD6D;font-size: 12px;"></i>
+									<p style="display: inline-block;font-size: 6px;color: #999;margin: 0;vertical-align: middle;" class="am-text-truncate">649</p>
+									<p style="display: inline-block;font-size: 6px;color: #999;margin: 0;vertical-align: middle;" class="am-text-truncate">万</p>
+								</div>
+							</div>
+							<i class="am-icon-play-circle-o"></i>
+						</div>
+						<div class="am-cf cebian-video">
+							<div class="am-fl" style="width: 40%;">
+								<img src="img/736f0c7ejw1f7titpzopjj20hs09wgmw.jpg" class="am-img-responsive"/>
+							</div>
+							<div class="am-fl" style="width: 58%;margin-left: 2%;margin-top: -5px;">
+								<p class="ellipsis-2" style="font-size: 6px;margin: 0;">《真正男子汉》里面最搞笑的一段，再也不会吃饭的时候看了</p>
+								<div class="" style="height: 20px;">
+									<img src="img/005CYdlIjw8ex6rq2r4t7j305k05kt8k.jpg" style="width: 10%;vertical-align:middle;"/>
+									<p style="display: inline-block;width: 20%;font-size: 6px;margin: 0;vertical-align: middle;" class="am-text-truncate">全球奇异事件</p>
+									<i class="am-icon-vimeo-square" style="color: #FFAD6D;font-size: 12px;"></i>
+									<p style="display: inline-block;font-size: 6px;color: #999;margin: 0;vertical-align: middle;" class="am-text-truncate">649</p>
+									<p style="display: inline-block;font-size: 6px;color: #999;margin: 0;vertical-align: middle;" class="am-text-truncate">万</p>
+								</div>
+							</div>
+							<i class="am-icon-play-circle-o"></i>
+						</div>
+						<div class="am-cf cebian-video">
+							<div class="am-fl" style="width: 40%;">
+								<img src="img/5db0ec6bjw1f9g5ek5i47j20hs0a0mxo.jpg" class="am-img-responsive"/>
+							</div>
+							<div class="am-fl" style="width: 58%;margin-left: 2%;margin-top: -5px;">
+								<p class="ellipsis-2" style="font-size: 6px;margin: 0;">爸爸去哪儿董力阿拉蕾一言不合就撩爸！“我想当董爸爸女朋友”这对CP我站了！</p>
+								<div class="" style="height: 20px;">
+									<img src="img/00668RPojw8etna7r1r64j30da0dbdi5.jpg" style="width: 10%;vertical-align:middle;"/>
+									<p style="display: inline-block;width: 20%;font-size: 6px;margin: 0;vertical-align: middle;" class="am-text-truncate">全球奇异事件</p>
+									<i class="am-icon-vimeo-square" style="color: #FFAD6D;font-size: 12px;"></i>
+									<p style="display: inline-block;font-size: 6px;color: #999;margin: 0;vertical-align: middle;" class="am-text-truncate">649</p>
+									<p style="display: inline-block;font-size: 6px;color: #999;margin: 0;vertical-align: middle;" class="am-text-truncate">万</p>
+								</div>
+							</div>
+							<i class="am-icon-play-circle-o"></i>
+						</div>
+						<div class="am-cf cebian-video">
+							<div class="am-fl" style="width: 40%;">
+								<img src="img/-fW7zf10rILP2VOWA633aw___m.jpg" class="am-img-responsive"/>
+							</div>
+							<div class="am-fl" style="width: 58%;margin-left: 2%;margin-top: -5px;">
+								<p class="ellipsis-2" style="font-size: 6px;margin: 0;">【申嘉湖高速今晨发生两起追尾事故，已致9死43伤】L秒拍视频 11月6日凌晨5时45分许</p>
+								<div class="" style="height: 20px;">
+									<img src="img/005vnhZYgw1ehsl3xhv75j308c08cq32.jpg" style="width: 10%;vertical-align:middle;"/>
+									<p style="display: inline-block;width: 20%;font-size: 6px;margin: 0;vertical-align: middle;" class="am-text-truncate">全球奇异事件</p>
+									<i class="am-icon-vimeo-square" style="color: #FFAD6D;font-size: 12px;"></i>
+									<p style="display: inline-block;font-size: 6px;color: #999;margin: 0;vertical-align: middle;" class="am-text-truncate">649</p>
+									<p style="display: inline-block;font-size: 6px;color: #999;margin: 0;vertical-align: middle;" class="am-text-truncate">万</p>
+								</div>
+							</div>
+							<i class="am-icon-play-circle-o"></i>
+						</div>
+						<div class="am-cf cebian-video">
+							<div class="am-fl" style="width: 40%;">
+								<img src="img/-fW7zf10rILP2VOWA633aw___m.jpg" class="am-img-responsive"/>
+							</div>
+							<div class="am-fl" style="width: 58%;margin-left: 2%;margin-top: -5px;">
+								<p class="ellipsis-2" style="font-size: 6px;margin: 0;">【申嘉湖高速今晨发生两起追尾事故，已致9死43伤】L秒拍视频 11月6日凌晨5时45分许</p>
+								<div class="" style="height: 20px;">
+									<img src="img/005vnhZYgw1ehsl3xhv75j308c08cq32.jpg" style="width: 10%;vertical-align:middle;"/>
+									<p style="display: inline-block;width: 20%;font-size: 6px;margin: 0;vertical-align: middle;" class="am-text-truncate">全球奇异事件</p>
+									<i class="am-icon-vimeo-square" style="color: #FFAD6D;font-size: 12px;"></i>
+									<p style="display: inline-block;font-size: 6px;color: #999;margin: 0;vertical-align: middle;" class="am-text-truncate">649</p>
+									<p style="display: inline-block;font-size: 6px;color: #999;margin: 0;vertical-align: middle;" class="am-text-truncate">万</p>
+								</div>
+							</div>
+							<i class="am-icon-play-circle-o"></i>
+						</div>
+						<div class="am-cf cebian-video">
+							<div class="am-fl" style="width: 40%;">
+								<img src="img/5db0ec6bjw1f9g5ek5i47j20hs0a0mxo.jpg" class="am-img-responsive"/>
+							</div>
+							<div class="am-fl" style="width: 58%;margin-left: 2%;margin-top: -5px;">
+								<p class="ellipsis-2" style="font-size: 6px;margin: 0;">爸爸去哪儿董力阿拉蕾一言不合就撩爸！“我想当董爸爸女朋友”这对CP我站了！</p>
+								<div class="" style="height: 20px;">
+									<img src="img/00668RPojw8etna7r1r64j30da0dbdi5.jpg" style="width: 10%;vertical-align:middle;"/>
+									<p style="display: inline-block;width: 20%;font-size: 6px;margin: 0;vertical-align: middle;" class="am-text-truncate">全球奇异事件</p>
+									<i class="am-icon-vimeo-square" style="color: #FFAD6D;font-size: 12px;"></i>
+									<p style="display: inline-block;font-size: 6px;color: #999;margin: 0;vertical-align: middle;" class="am-text-truncate">649</p>
+									<p style="display: inline-block;font-size: 6px;color: #999;margin: 0;vertical-align: middle;" class="am-text-truncate">万</p>
+								</div>
+							</div>
+							<i class="am-icon-play-circle-o"></i>
+						</div>
+						<div class="am-cf cebian-video">
+							<div class="am-fl" style="width: 40%;">
+								<img src="img/-fW7zf10rILP2VOWA633aw___m.jpg" class="am-img-responsive"/>
+							</div>
+							<div class="am-fl" style="width: 58%;margin-left: 2%;margin-top: -5px;">
+								<p class="ellipsis-2" style="font-size: 6px;margin: 0;">【申嘉湖高速今晨发生两起追尾事故，已致9死43伤】L秒拍视频 11月6日凌晨5时45分许</p>
+								<div class="" style="height: 20px;">
+									<img src="img/005vnhZYgw1ehsl3xhv75j308c08cq32.jpg" style="width: 10%;vertical-align:middle;"/>
+									<p style="display: inline-block;width: 20%;font-size: 6px;margin: 0;vertical-align: middle;" class="am-text-truncate">全球奇异事件</p>
+									<i class="am-icon-vimeo-square" style="color: #FFAD6D;font-size: 12px;"></i>
+									<p style="display: inline-block;font-size: 6px;color: #999;margin: 0;vertical-align: middle;" class="am-text-truncate">649</p>
+									<p style="display: inline-block;font-size: 6px;color: #999;margin: 0;vertical-align: middle;" class="am-text-truncate">万</p>
+								</div>
+							</div>
+							<i class="am-icon-play-circle-o"></i>
+						</div>
+						<div class="am-cf cebian-video">
+						<div class="am-fl" style="width: 40%;">
+							<img src="img/-fW7zf10rILP2VOWA633aw___m.jpg" class="am-img-responsive"/>
+						</div>
+						<div class="am-fl" style="width: 58%;margin-left: 2%;margin-top: -5px;">
+							<p class="ellipsis-2" style="font-size: 6px;margin: 0;">【申嘉湖高速今晨发生两起追尾事故，已致9死43伤】L秒拍视频 11月6日凌晨5时45分许</p>
+							<div class="" style="height: 20px;">
+								<img src="img/005vnhZYgw1ehsl3xhv75j308c08cq32.jpg" style="width: 10%;vertical-align:middle;"/>
+								<p style="display: inline-block;width: 20%;font-size: 6px;margin: 0;vertical-align: middle;" class="am-text-truncate">全球奇异事件</p>
+								<i class="am-icon-vimeo-square" style="color: #FFAD6D;font-size: 12px;"></i>
+								<p style="display: inline-block;font-size: 6px;color: #999;margin: 0;vertical-align: middle;" class="am-text-truncate">649</p>
+								<p style="display: inline-block;font-size: 6px;color: #999;margin: 0;vertical-align: middle;" class="am-text-truncate">万</p>
+							</div>
+						</div>
+						<i class="am-icon-play-circle-o"></i>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="box1" style="width:25rem;height:35rem;position: fixed;bottom: 0;right: 0;z-index: 99999;display: none;">
+			<video width="100%" height="" controls style="position: absolute;bottom: 0;right: 0;">
+				<source src="video/video.mp4" type="video/mp4"></source>
+			</video>
+		</div>
+		
+		<!--footer-->
+		<footer style="width: 100%;background: #f6f6f6;" class="am-show-lg-only">
+			<div class="am-container" style="background: #f6f6f6;">
+				<div class="am-g">
+					<div class="am-u-sm-8 am-u-sm-centered">
+						<p class="copy"><a  class="S_txt2"><i class="W_icon icon_weibo"></i>微博客服</a><a class="S_txt2" target="_blank" href="http://help.weibo.com/newtopic/suggest?bottomnav=1&amp;wvr=6">意见反馈</a><a class="S_txt2" target="_blank" href="http://weibo.com/aj/static/report.html?_wv=6">舞弊举报</a><a class="S_txt2" target="_blank" href="http://open.weibo.com/?bottomnav=1&amp;wvr=6">开放平台</a><a class="S_txt2" target="_blank" href="http://hr.weibo.com/?bottomnav=1&amp;wvr=6">微博招聘</a><a class="S_txt2" target="_blank" href="http://news.sina.com.cn/guide/?bottomnav=1&amp;wvr=6">新浪网导航</a><a class="S_txt2" target="_blank" href="#">举报处理大厅</a>
+            			<select style="font-size: 12px;outline: none;">
+                			<option value="zh-cn" selected="">中文(简体)</option>
+                			<option value="zh-tw">中文(臺灣)</option>
+                			<option value="zh-hk">中文(香港)</option>
+                			<option value="en">English</option>
+              			</select></p>
+					</div>
+				</div>
+				<div class="am-g">
+					<div class="am-u-sm-12 am-u-sm-centered">
+						<p class="copy_v2"><a class="S_txt2" target="_blank" href="http://weibo.com/aj/static/jicp.html?_wv=6">京ICP证100780号</a><a class="S_txt2" href="http://weibo.com/aj/static/medi_license.html?_wv=6" target="__blank">互联网药品服务许可证</a><a class="S_txt2" href="http://weibo.com/aj/static/medi_health_license.html?_wv=6" target="__blank">互联网医疗保健许可证</a><a class="S_txt2" href="http://weibo.com/aj/static/jww.html?_wv=6" target="__blank">京网文[2014]2046-296号</a> <a class="S_txt2" href="http://www.miibeian.gov.cn" target="__blank">京ICP备12002058号</a> <a class="S_txt2" href="http://weibo.com/aj/static/license.html?_wv=6" target="__blank">增值电信业务经营许可证B2-20140447</a>
+              			</p>
+					</div>
+				</div>
+				<div class="am-g">
+					<div class="am-u-sm-7 am-u-sm-centered">
+						<p class="company"><span class="copy S_txt2">Copyright © 2009-2016 WEIBO 北京微梦创科网络技术有限公司</span><span><a class="S_txt2" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000019">京公网安备11000002000019号</a>
+           				 </span></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!---侧边栏-->
+		<!-- 按钮触发器 需要指定 target -->
+		<button class="btn am-circle aside-btn am-show-md-down" data-am-offcanvas="{target: '#doc-oc-demo2', effect: 'push'}">sou</button>
+		<!-- 侧边栏内容 -->
+		<div id="doc-oc-demo2" class="am-offcanvas">
+			<div class="am-offcanvas-bar">
+				<div class="am-offcanvas-content">
+					<div class="aside">
+						<div class="am-g active">
+							<div class="am-u-sm-4"><i class="am-icon-home am-icon-fw"></i></div>
+							<div class="am-u-sm-8">
+								<p>推荐</p>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-4"><i class="am-icon-star am-icon-fw"></i></div>
+							<div class="am-u-sm-8">
+								<p>明星</p>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-4"><i class="am-icon-film am-icon-fw"></i></div>
+							<div class="am-u-sm-8">
+								<p>视频</p>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-4"><i class="am-icon-smile-o am-icon-fw"></i></div>
+							<div class="am-u-sm-8">
+								<p>搞笑</p>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-4"><i class="am-icon-heart am-icon-fw"></i></div>
+							<div class="am-u-sm-8">
+								<p>情感</p>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-4"><i class="am-icon-dribbble am-icon-fw"></i></div>
+							<div class="am-u-sm-8">
+								<p>社会</p>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-4"><i class="am-icon-user am-icon-fw"></i></div>
+							<div class="am-u-sm-8">
+								<p>综艺</p>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-4"><i class="am-icon-venus am-icon-fw"></i></div>
+							<div class="am-u-sm-8">
+								<p>美妆</p>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-4"><i class="am-icon-bus am-icon-fw"></i></div>
+							<div class="am-u-sm-8">
+								<p>美食</p>
+							</div>
+						</div>
+						<div class="am-g">
+							<div class="am-u-sm-4"><i class="am-icon-user am-icon-fw"></i></div>
+							<div class="am-u-sm-8">
+								<p>美女</p>
+							</div>
+						</div>
+						<div class="am-g gengduocaidan">
+							<div class="am-u-sm-4"><i class="am-icon-ellipsis-h am-icon-fw"></i></div>
+							<div class="am-u-sm-8">
+								<p>更多</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--[if (gte IE 9)|!(IE)]><!-->
+		<script src="js/jquery-1.12.4.js"></script>
+		<!--<![endif]-->
+		<!--[if lte IE 8 ]>
+<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="assets/js/amazeui.ie8polyfill.min.js"></script>
+<![endif]-->
+		<script src="js/amazeui.min.js"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/x-handlebars-template" id="demo-template">{{#this}}
+			<div data-am-widget="duoshuo" class="am-duoshuo{{#if theme}} am-duoshuo-{{theme}}{{else}} am-duoshuo-default{{/if}}{{#if widgetId}} {{widgetId}}{{/if}}{{#if className}} {{className}}{{/if}}" {{#if id}} id="{{id}}" {{/if}} {{#if options.shortName}}data-ds-short-name="{{options.shortName}}" {{/if}}>
+				<div class="ds-thread" {{#if content}}{{#each content}}{{#ifCond @key '==' 'threadKey'}} data-thread-key="{{this}}" {{else}} data-{{@key}}="{{this}}" {{/ifCond}}{{/each}}{{/if}}>
+				</div>
+			</div>
+			{{/this}}</script>
+		<script type="text/template" id="demo-data">{"options":{"shortName":"landa2016"},"theme":"default"}</script>
+		<script type="text/javascript">
+			! function(e) {
+				e(function() {
+					function i(i) {
+						if(!n) {
+							var d = "";
+							e.isArray(t) ? e.each(t, function(e, i) {
+								d += "<h2 class='demo-title'>" + i.title + "</h2>", d += a(i.data), d += "<hr>"
+							}) : (d += i ? i : "", d += a(t)), o.html(d)
+						}
+					}
+					var t = {
+							options: {
+								shortName: "amui"
+							},
+							theme: "default"
+					},
+						a = Handlebars.compile(e("#demo-template").html()),
+						o = e("#demo-view"),
+						n = o.is("[data-backend-compiled]");
+					i(), window.seajs && seajs.use(["duoshuo"], function(e) {
+						!n && e.init && e.init()
+					})
+				})
+			}(window.jQuery || window.Zepto)
+		</script>
+		<div id="ds-notify" style="top: 24px; right: 24px; display: none;">
+			<div id="ds-reset">
+				<a class="ds-logo" href="http://duoshuo.com/" target="_blank" title="多说"></a>
+				<ul class="ds-notify-unread">
+					<li style="display:none;">
+						<a data-type="unread-comments" href="javascript:void(0);">你有undefined条新回复</a>
+					</li>
+					<li style="display:none;">
+						<a data-type="unread-notifications" href="javascript:void(0);">你有undefined条系统消息</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+
+</html>
